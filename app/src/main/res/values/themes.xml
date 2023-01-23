@@ -1,0 +1,82 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.JobInterviewProject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/black_2929</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="background">@color/white_f1f1</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.JobInterviewProject.AppSplashTheme" parent="Theme.JobInterviewProject">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="BaseTextAppearance">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="TitleTextAppearance" parent="BaseTextAppearance">
+        <item name="fontFamily">@font/font_gilroy_semi_bold</item>
+    </style>
+
+    <style name="TitleTextAppearance.Big" parent="TitleTextAppearance">
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="TitleTextAppearance.Medium" parent="TitleTextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PlainTextAppearance" parent="BaseTextAppearance">
+        <item name="fontFamily">@font/font_gilroy_medium</item>
+    </style>
+
+    <style name="PlainTextAppearance.Big" parent="PlainTextAppearance">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="PlainTextAppearance.Medium" parent="PlainTextAppearance">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="PlainTextAppearance.Small" parent="PlainTextAppearance">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="PlainTextAppearance.Medium.Bold" parent="PlainTextAppearance.Medium">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="hintTextColor">?attr/colorOnPrimary</item>
+        <item name="android:textAppearance">@style/PlainTextAppearance.Medium</item>
+    </style>
+
+    <style name="ToolbarStyle">
+        <item name="titleTextAppearance">@style/TitleTextAppearance.Medium</item>
+        <item name="titleCentered">true</item>
+        <item name="titleTextColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="TransparentBottomSheetStyle" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="TransparentDialogTheme.BottomSheet" parent="TransparentDialogTheme">
+        <item name="bottomSheetStyle">@style/TransparentBottomSheetStyle</item>
+    </style>
+
+    <style name="TransparentDialogTheme" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:navigationBarColor">?attr/colorOnPrimary</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+</resources>

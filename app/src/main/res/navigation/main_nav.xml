@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/listingFragment">
+
+    <fragment
+        android:id="@+id/listingFragment"
+        android:name="com.mikhnovskiy.spacex.presentation.screens.listing.ListingFragment"
+        android:label="ListingFragment"
+        tools:layout="@layout/fragment_listing">
+        <action
+            android:id="@+id/action_listingFragment_to_webViewActivity"
+            app:destination="@id/webViewActivity"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/listingFragment" />
+    </fragment>
+
+    <activity
+        android:id="@+id/webViewActivity"
+        android:name="com.mikhnovskiy.spacex.presentation.screens.WebViewActivity"
+        android:label="WebViewActivity"
+        tools:layout="@layout/dialog_filter">
+
+        <argument
+            android:name="url"
+            app:argType="string" />
+
+    </activity>
+</navigation>

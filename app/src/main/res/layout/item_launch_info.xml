@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewLaunch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewIsSuccess"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/imageViewLaunch"
+            app:layout_constraintStart_toStartOf="@id/imageViewLaunch"
+            app:layout_constraintTop_toBottomOf="@id/imageViewLaunch"
+            tools:src="@drawable/ic_round_done_outline_24" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <TextView
+            android:id="@+id/textViewLabelNameLaunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/mission_string"
+            android:textAppearance="@style/PlainTextAppearance.Medium"
+            app:layout_constraintStart_toEndOf="@id/imageViewLaunch"
+            app:layout_constraintTop_toTopOf="@id/imageViewLaunch" />
+
+        <TextView
+            android:id="@+id/textViewNameLaunch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:maxLines="2"
+            android:textAppearance="@style/PlainTextAppearance.Medium.Bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/textViewLabelNameLaunch"
+            tools:text="@string/mission_string" />
+
+        <TextView
+            android:id="@+id/textViewLabelDateTimeLaunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/date_time_string"
+            android:textAppearance="@style/PlainTextAppearance.Medium"
+            app:layout_constraintStart_toStartOf="@id/textViewLabelNameLaunch"
+            app:layout_constraintTop_toBottomOf="@id/textViewNameLaunch" />
+
+        <TextView
+            android:id="@+id/textViewDateTimeLaunch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:maxLines="2"
+            android:textAppearance="@style/PlainTextAppearance.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/textViewLabelDateTimeLaunch"
+            tools:text="@string/date_time_string" />
+
+        <TextView
+            android:id="@+id/textViewLabelRocketLaunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/rocket_string"
+            android:textAppearance="@style/PlainTextAppearance.Medium"
+            app:layout_constraintStart_toStartOf="@id/textViewLabelNameLaunch"
+            app:layout_constraintTop_toBottomOf="@id/textViewDateTimeLaunch" />
+
+        <TextView
+            android:id="@+id/textViewRocketLaunch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:maxLines="2"
+            android:textAppearance="@style/PlainTextAppearance.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/textViewLabelRocketLaunch"
+            tools:text="dfsfsdfds\nfffffffffffff" />
+
+        <TextView
+            android:id="@+id/textViewLabelDaysLaunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/PlainTextAppearance.Medium"
+            app:layout_constraintStart_toStartOf="@id/textViewLabelNameLaunch"
+            app:layout_constraintTop_toBottomOf="@id/textViewRocketLaunch"
+            tools:text="@string/days_count_mask" />
+
+        <TextView
+            android:id="@+id/textViewDaysLaunch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:maxLines="2"
+            android:textAppearance="@style/PlainTextAppearance.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/textViewLabelDaysLaunch"
+            tools:text="10" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
